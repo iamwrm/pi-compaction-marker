@@ -23,13 +23,13 @@
  * compaction on your current path is the live one — its summary plus
  * everything below its boundary marker is your context.
  *
- * Visible-row targeting: /tree unconditionally hides assistant messages that
- * carry only thinking/tool calls and no text (tree-selector applyFilter — the
- * row is skipped in EVERY filter mode). Split-turn cut points regularly land
- * exactly on such entries, so the boundary marker is placed on the first
- * entry of the kept range that /tree can actually render: a user message, an
- * assistant message with text, or an errored/aborted assistant message;
- * failing those, the first toolResult; failing everything, the raw boundary
+ * Visible-row targeting: /tree normally hides assistant messages that carry
+ * only thinking/tool calls and no text (except when that entry is the current
+ * leaf). Split-turn cut points regularly land exactly on such entries, so the
+ * boundary marker is placed on the first entry of the kept range that /tree
+ * can reliably render: a user message, an assistant message with text, or an
+ * assistant message with a non-normal stop reason; failing those, the first
+ * toolResult; failing everything, the raw boundary
  * entry. Each compaction's kept range is walked along its OWN root path
  * (parentId chain), never the current branch.
  *

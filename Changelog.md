@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-17
+
+### Changed
+- Package version 0.1.3. Updated the pi coding-agent development dependency and lockfile to 0.80.8.
+- Corrected the README marker glyph and clarified `/tree` visibility comments; runtime marker behavior is unchanged.
+
+### Validated
+- Pi 0.80.8 leaves the compaction/session entry contracts, `session_compact` timing, label API, and `/tree` marker rendering used by this extension unchanged; strict typecheck passes without a source migration.
+
 ## 2026-07-15
 
 ### Changed
