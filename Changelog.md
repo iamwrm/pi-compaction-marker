@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 - 2026-09-21
+
+- Require Pi 0.86.1 or newer and lock its development dependency to 0.86.1.
+- Add `npm test` with permanent reconciliation coverage using real SessionManager entries: system deltas, compaction checkpoints, standalone usage including unknown kinds, sibling/serial branches, stable ordinals, idempotence, legacy marker repair and user-label preservation.
+- Marker placement and saved-label behavior are unchanged.
+
 ## 2026-09-20
 
 ### Changed
