@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1 - 2026-09-30
+
+- Require Pi 0.99.1 or newer and lock its development dependency to 0.99.1.
+- Pi 0.99.1 keeps the compaction node/kept-entry contracts, `session_compact`
+  timing, label API, and `/tree` marker rendering used here; strict typecheck
+  and the offline SessionManager reconciliation tests pass unchanged.
+
 ## 0.2.0 - 2026-09-21
 
 - Require Pi 0.86.1 or newer and lock its development dependency to 0.86.1.

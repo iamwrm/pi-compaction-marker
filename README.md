@@ -23,7 +23,7 @@ npm run check
 
 ## Development
 
-Requires Pi >=0.86.1. Run `npm test` for strict TypeScript and offline permanent
+Requires Pi >=0.99.1. Run `npm test` for strict TypeScript and offline permanent
 SessionManager reconciliation tests, including system checkpoints, usage,
 branching, idempotence and preservation of user labels. `npm run check` remains
 the typecheck-only gate.
