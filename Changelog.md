@@ -1,5 +1,10 @@
 # Changelog
 
+## Pi 1.0.0 qualification - 2026-10-02
+
+- Adopt the reviewed 0.2.1 release and retain its >=0.99.1 peer. Pin the development dependency and lock to Pi 1.0.0; marker behavior is unchanged.
+- macOS strict types and three model-free reconciliation tests pass. No live provider call or publication.
+
 ## 0.2.1 - 2026-09-30
 
 - Require Pi 0.99.1 or newer and lock its development dependency to 0.99.1.
